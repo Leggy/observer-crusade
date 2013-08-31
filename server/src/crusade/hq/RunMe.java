@@ -1,8 +1,8 @@
-package server;
+package crusade.hq;
 
-public class Server {
+public class RunMe {
 	
-	public Server() {
+	public RunMe() {
 		
 	}
 	
