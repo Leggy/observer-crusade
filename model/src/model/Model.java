@@ -7,7 +7,7 @@ import java.util.Set;
 public class Model extends Observable {
 
 	private Set<String> players;
-	private int modelID;
+	private Integer modelID;
 
 	/**
 	 * Creates a new model.

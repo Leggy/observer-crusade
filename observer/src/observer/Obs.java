@@ -29,6 +29,8 @@ public class Obs implements Observer {
 				System.out.println("OBS: Object is an instanceof Set");
 			} else if(object instanceof HashSet){
 				System.out.println("OBS: Object is an instanceof HashSet");
+			} else {
+				System.out.println("OBS: I HAVE NO IDEA WHAT I AM!");
 			}
 		} else {
 			System.out.println("OBS: I HAVE NO IDEA WHAT I AM DOING!");
