@@ -28,6 +28,7 @@ public class Model extends Observable {
 			players.add(p);
 			setChanged();
 			notifyObservers();
+			clearChanged();
 		}
 	}
 
@@ -42,6 +43,7 @@ public class Model extends Observable {
 			modelID = id;
 			setChanged();
 			notifyObservers();
+			clearChanged();
 		}
 	}
 
