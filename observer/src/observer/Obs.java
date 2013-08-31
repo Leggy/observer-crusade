@@ -11,7 +11,7 @@ import model.Model;
  * This class in an implementation of Observer, specifically designed to watch
  * the Model class.
  * 
- * @author iamwinrar
+ * @author iamwinrar, Leggy
  * 
  */
 public class Obs implements Observer {
@@ -28,7 +28,8 @@ public class Obs implements Observer {
 		if (observable instanceof Model) {
 			System.out.println("OBS: Observable is an instanceof Model");
 			Model m = (Model) observable;
-			System.out.println("OBS: " + m.getID());
+			System.out.println("OBS: ID = " + m.getID());
+			System.out.println("OBS: Players = " + m.getPlayers());
 
 			/*
 			 * From here on we are checking if the object parameter is an
@@ -37,13 +38,13 @@ public class Obs implements Observer {
 			 * the object is, we print that to console.
 			 */
 			if (object instanceof Integer) {
-				System.out.println("OBS: Object is an instanceof Integer.");
+				System.out.println("OBS: Object changed is an instanceof Integer.");
 
 			} else if (object instanceof Set) {
-				System.out.println("OBS: Object is an instanceof Set.");
+				System.out.println("OBS: Object changed is an instanceof Set.");
 
 			} else if (object instanceof HashSet) {
-				System.out.println("OBS: Object is an instanceof HashSet.");
+				System.out.println("OBS: Object changed is an instanceof HashSet.");
 
 			} else {
 				System.out.println("OBS: Cannot identify bject.");

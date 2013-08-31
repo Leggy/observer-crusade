@@ -8,7 +8,7 @@ import java.util.Set;
  * This class is an example model of something tht can be observed using the
  * Observable and Observer Frameworks.
  * 
- * @author Leggy
+ * @author Leggy, iamwinrar
  * 
  */
 public class Model extends Observable {
@@ -33,6 +33,8 @@ public class Model extends Observable {
 	public void addPlayer(String p) {
 		if (p != null) {
 			players.add(p);
+			
+			System.out.println("CLI: Adding Player \"" + p + "\"");
 
 			/*
 			 * Here we toggle the changed field (using setChanged()), notify all
@@ -54,6 +56,8 @@ public class Model extends Observable {
 	public void setID(int id) {
 		if (id > 0) {
 			modelID = id;
+			
+			System.out.println("CLI: Setting ID = " + id);
 
 			/*
 			 * Here we toggle the changed field (using setChanged()), notify all
