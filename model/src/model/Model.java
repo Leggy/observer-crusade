@@ -26,6 +26,8 @@ public class Model extends Observable {
 	public void addPlayer(String p) {
 		if (p != null) {
 			players.add(p);
+			setChanged();
+			notifyObservers();
 		}
 	}
 
@@ -38,6 +40,8 @@ public class Model extends Observable {
 	public void setID(int id) {
 		if (id > 0) {
 			modelID = id;
+			setChanged();
+			notifyObservers();
 		}
 	}
 
