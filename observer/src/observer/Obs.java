@@ -36,6 +36,8 @@ public class Obs implements Observer {
 			System.out.println("OBS: I HAVE NO IDEA WHAT I AM DOING!");
 		}
 		
+		System.out.println("");
+		
 		
 		
 	}
