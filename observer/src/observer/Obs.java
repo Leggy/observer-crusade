@@ -21,10 +21,10 @@ public class Obs implements Observer {
 			System.out.println("OBS: Observable is an instanceof Model");
 			
 			/*
-			 * Checking if object is instance of string and set
+			 * Checking if object is instance of int and set
 			 */
-			if(object instanceof String){
-				System.out.println("OBS: Object is an instanceof String");
+			if(object instanceof Integer){
+				System.out.println("OBS: Object is an instanceof Integer");
 			} else if(object instanceof Set){
 				System.out.println("OBS: Object is an instanceof Set");
 			} else if(object instanceof HashSet){
