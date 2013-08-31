@@ -4,6 +4,13 @@ import java.util.HashSet;
 import java.util.Observable;
 import java.util.Set;
 
+/**
+ * This class is an example model of something tht can be observed using the
+ * Observable and Observer Frameworks.
+ * 
+ * @author Leggy
+ * 
+ */
 public class Model extends Observable {
 
 	private Set<String> players;
@@ -26,6 +33,12 @@ public class Model extends Observable {
 	public void addPlayer(String p) {
 		if (p != null) {
 			players.add(p);
+
+			/*
+			 * Here we toggle the changed field (using setChanged()), notify all
+			 * observers that *something* has changed, passing them the
+			 * *something*, and then clearing the changed field.
+			 */
 			setChanged();
 			notifyObservers(players);
 			clearChanged();
@@ -41,6 +54,12 @@ public class Model extends Observable {
 	public void setID(int id) {
 		if (id > 0) {
 			modelID = id;
+
+			/*
+			 * Here we toggle the changed field (using setChanged()), notify all
+			 * observers that *something* has changed, passing them the
+			 * *something*, and then clearing the changed field.
+			 */
 			setChanged();
 			notifyObservers(modelID);
 			clearChanged();
