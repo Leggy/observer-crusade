@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/model"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/observer"/>
+	<classpathentry kind="lib" path="C:/Users/lachl_000/Documents/GitHub/deco2800-2013/deco2800.arcade.server/libs/kryonet-2.18-all.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

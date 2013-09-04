@@ -32,18 +32,20 @@ public class Model extends Observable {
 	 */
 	public void addPlayer(String p) {
 		if (p != null) {
-			players.add(p);
-			
-			System.out.println("CLI: Adding Player \"" + p + "\"");
+			if(!players.contains(p)){
+				players.add(p);
+				
+				System.out.println("CLI: Adding Player \"" + p + "\"");
 
-			/*
-			 * Here we toggle the changed field (using setChanged()), notify all
-			 * observers that *something* has changed, passing them the
-			 * *something*, and then clearing the changed field.
-			 */
-			setChanged();
-			notifyObservers(players);
-			clearChanged();
+				/*
+				 * Here we toggle the changed field (using setChanged()), notify all
+				 * observers that *something* has changed, passing them the
+				 * *something*, and then clearing the changed field.
+				 */
+				setChanged();
+				notifyObservers(players);
+				clearChanged();
+			}
 		}
 	}
 

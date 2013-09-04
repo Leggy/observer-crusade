@@ -56,6 +56,12 @@ public class RunMe {
 		 */
 		System.out.println("RUN: Adding new player String");
 		model.addPlayer("Jordan");
+		
+		/*
+		 * Here we add a new player String to the model.
+		 */
+		System.out.println("RUN: Adding new player String");
+		model.addPlayer("Jordan");
 
 	}
 }
